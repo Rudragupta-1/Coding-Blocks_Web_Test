@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
 	const [title, setTitle] = useState("");
@@ -24,7 +24,8 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+    <>
+    		<div className="App">
 			<div className="card">
 				<div className="head">
 					<h1>Coding Blocks Placement Notes</h1>
@@ -76,6 +77,22 @@ function App() {
 				</div>
 			</div>
 		</div>
+    <h1>Record Voice Notes</h1>
+    <div>
+      <div className="noteContainer">
+        <h2>Record Note Here</h2>
+        <button className="button">
+          Save
+        </button>
+        <button >
+          Start/Stop
+        </button>
+      </div>
+      <div className="noteContainer">
+        <h2>Notes Store</h2>
+      </div>
+    </div>
+    </>
 	);
 }
 
